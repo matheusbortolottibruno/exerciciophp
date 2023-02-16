@@ -7,6 +7,20 @@
     <title>EXERCICIO 2</title>
 </head>
 <body>
-    
+    <form action=""method="get">
+        Digite um caractere : <input type="text" name="carac"><br>
+        <button type="submit">Testar</button>
+    </form>
+    <?php
+    $meuCaractere = $_GET['carac'];
+    if (ctype_digit($meuCaractere))
+    echo "È digito";
+    else
+    echo "Não é Digito";
+    ?>
+
+
+
+
 </body>
 </html>
